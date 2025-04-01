@@ -48,7 +48,7 @@ Includes a test function to demonstrate OrderBook functionality.
 ## Prerequisites
 Go 1.16 or higher
 
-#Installation
+## Installation
 Clone the repository:
 bash
 
@@ -64,7 +64,7 @@ bash
 go build
 ./TCP-Exchange
 
-#Usage
+## Usage
 Running the Server:
 Start the server by running the compiled binary or go run main.go.
 
