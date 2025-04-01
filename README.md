@@ -15,10 +15,10 @@ Test Suite: Includes a test function to demonstrate order book functionality.
 
 TCP-Exchange/
 ├── models/
-│   ├── orderbook.go  # OrderBook struct and matching logic
-│   ├── exchange.go   # Exchange struct for message broadcasting
-│   └── server.go     # Server struct for TCP connections and client management
-└── main.go           # Main entry point and test function
+│   ├── orderbook.go    # Order book implementation with matching logic
+│   ├── exchange.go     # Message broadcasting system
+│   └── server.go       # TCP server and client handling
+└── main.go             # Test harness and server startup
 
 ### Key Components
 OrderBook (models/orderbook.go):
