@@ -1,6 +1,6 @@
-#TCP Exchange
+# TCP Exchange
 TCP Exchange is a Go-based trading exchange system that implements a server-client architecture with order book matching functionality. It supports multiple order types and allows clients to connect via TCP to join exchanges, submit trades, and manage orders.
-##Features
+## Features
 Order Book Matching: Supports market orders, Fill-or-Kill (FOK), and Good-Til-Cancelled (GTC) orders with continuous matching.
 
 TCP Server: Handles multiple client connections, allowing them to join/leave exchanges and submit trades.
@@ -11,7 +11,7 @@ Thread Safety: Uses mutex locks to ensure safe concurrent access to shared resou
 
 Test Suite: Includes a test function to demonstrate order book functionality.
 
-##Project Structure
+## Project Structure
 
 TCP-Exchange/
 ├── models/
@@ -20,7 +20,7 @@ TCP-Exchange/
 │   └── server.go     # Server struct for TCP connections and client management
 └── main.go           # Main entry point and test function
 
-###Key Components
+### Key Components
 OrderBook (models/orderbook.go):
 Manages bids and asks in a trading order book.
 
@@ -45,7 +45,7 @@ Launches the TCP server on port 8080.
 
 Includes a test function to demonstrate OrderBook functionality.
 
-#Prerequisites
+## Prerequisites
 Go 1.16 or higher
 
 #Installation
@@ -91,14 +91,14 @@ The TestOrderBook() function in main.go runs automatically on startup.
 
 It demonstrates various order types and matching scenarios, printing results to stdout.
 
-##Order Types
+## Order Types
 Market: Executes immediately at the best available price.
 
 FOK (Fill-or-Kill): Must be filled entirely immediately or cancelled.
 
 GTC (Good-Til-Cancelled): Remains active until matched or server stops.
 
-##Notes
+## Notes
 The server runs indefinitely until interrupted (e.g., Ctrl+C).
 
 Error handling is basic; production use would require more robust error management.
@@ -116,6 +116,6 @@ Enhance error handling and logging.
 
 Add support for more order types (e.g., limit orders with partial fills).
 
-##License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details (Note: Add a LICENSE file if you choose to use this).
 
