@@ -117,5 +117,4 @@ Enhance error handling and logging.
 Add support for more order types (e.g., limit orders with partial fills).
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details (Note: Add a LICENSE file if you choose to use this).
-
+This project is licensed under the MIT License - see the LICENSE file for details 
